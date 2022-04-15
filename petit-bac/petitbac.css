@@ -1,0 +1,52 @@
+h1 {
+    text-align: center;
+    color: black
+}
+
+
+table {
+    width: 100%;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+
+td {
+    color: blue;
+    border: 1px solid green;
+    font-size: 1.2em;
+}
+
+input {
+    width: 95%;
+
+}
+
+#bouton_ajouter {
+    text-align: left;
+}
+
+#bouton_clean {
+    text-align: right;
+}
+
+
+.btnjal {
+
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    padding: 20px 24px;
+    border-color: green;
+    transition: all .3s;
+    background-color: blue;
+
+}
+
+.btnjal:hover {
+    box-shadow: 0 8px 65px -5px #ff0000;
+}

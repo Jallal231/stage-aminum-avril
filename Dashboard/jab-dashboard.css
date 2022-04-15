@@ -1,0 +1,96 @@
+ body{
+     background-color: yellowgreen;
+ }
+ 
+ 
+ 
+
+#liste_jour{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    text-align: center; 
+    
+    
+}
+.semaine{   
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
+#semaine1{ 
+    border:solid 3px black;
+} 
+  
+ 
+#semaine2{ 
+     
+    border:solid 3px black; 
+     
+
+} 
+ 
+ 
+#semaine3{ 
+     
+     
+    border:solid 3px black; 
+     
+     
+    
+}
+  
+ 
+ 
+#semaine4{ 
+     
+    border:solid 3px black; 
+     
+
+}
+    
+    
+.matin{ 
+     
+    color: beige;
+}
+ 
+
+
+.aprés_midi{ 
+     
+    color: blue;  
+
+}
+   
+ .titre{
+     font-size: medium;
+     color: blueviolet;
+     border: dashed 1px white;
+     width: 100%;
+ }
+
+ .jour{
+    border: dashed 1px white;
+    width: 100%;
+ }
+ 
+
+h1{
+
+     text-align: center; 
+     color: darkred;
+      
+     
+}
+   
+ 
+ 
+ .ombre_interieure{
+        box-shadow: inset reverse 5em 1em gold;
+     
+
+ }
+   
+    

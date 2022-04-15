@@ -1,0 +1,61 @@
+h1 {
+
+
+    text-align: center;
+    color: black;
+
+}
+
+
+
+
+}
+
+
+
+#bouton_ajouter font-size: 30px;
+}
+
+
+#liste_boutons {
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#liste_supression {
+
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+#section_saisie {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+.btn {
+
+    font-family: arial;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ec0c0c;
+    border-radius: 10px;
+    padding: 20px 24px;
+    border-color: #ec0c0c;
+    transition: all .3s;
+
+}
+
+
+
+.btn:hover {
+    box-shadow: 0 8px 65px -5px #ec0c0c;
+}
