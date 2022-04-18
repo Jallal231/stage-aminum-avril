@@ -1,6 +1,6 @@
-console.log("Petitbac");
+console.log("Début du petit bac");
 
-let jal = document.getElementById("Saisie");
+let petitbac = document.getElementById("tableSaisie");
 
 let btnAjouter = document.getElementById("bouton_ajouter");
 btnAjouter.addEventListener("click", ajouter);
@@ -8,65 +8,105 @@ btnAjouter.addEventListener("click", ajouter);
 let btnClean = document.getElementById("bouton_clean");
 btnClean.addEventListener("click", clean);
 
-
 let btnGenerer = document.getElementById("bouton_generer");
-btnGenerer.addEventListener("click", generer);
+btnGenerer.addEventListener("click", genererLETTRE);
 
-let btnRénitialiser = document.getElementById("bouton_rénitialiser");
-btnRénitialiser.addEventListener("click", rénitialiser);
+let btnRenitialiser = document.getElementById("bouton_renitialiser");
+btnRenitialiser.addEventListener("click", renitialiser);
 
 
 
-// DEBUT DE MA FONCTION  
+// DEBUT DE MA FONCTION  AJOUTER
+
 
 
 function ajouter() {
 
 
     let tr = document.createElement("tr");
-    tr.classList.add("mes_choses")
+    tr.classList.add("rajout_ligne")
+    
     console.log(tr);
-    ajouterCase("Lettre", tr);
-    ajouterCase("Nom", tr);
-    ajouterCase("Prenom", tr);
-    ajouterCase("Objet", tr);
-    ajouterCase("Animaux", tr);
-    ajouterCase("Métiers", tr);
-    ajouterCase("Pays", tr);
-    ajouterCase("Fruits", tr);
-
+    ajouterCellule("Lettre", tr);
+    ajouterCellule("Nom", tr);
+    ajouterCellule("Prenom", tr);
+    ajouterCellule("Objet", tr);
+    ajouterCellule("Animaux", tr);
+    ajouterCellule("Métiers", tr);
+    ajouterCellule("Pays", tr);
+    ajouterCellule("Fruits", tr);
+    petitbac.appendChild(tr);
 }
 
 
-function ajouterCase(mots, tr) {
+function ajouterCellule(mots, tr) {
 
-    let jal = document.createElement("td")
+    let cellule = document.createElement("td"); 
     let saisie = document.getElementById(mots).value;
-    jal.innerText = saisie;
-    tr.appendChild(jal);
+    cellule.innerText = saisie;
+    tr.appendChild(Case);
 
 }
 
 
 
+// DEBUT DE MA FONCTION CLEAN 
 
+ 
 function clean() {
 
-    nettoyerCase("Lettre");
-    nettoyerCase("Nom");
-    nettoyerCase("Prenom");
-    nettoyerCase("Animaux");
-    nettoyerCase("Métiers");
-    nettoyerCase("Pays");
-    nettoyerCase("Fruits");
+    nettoyerCellule("Lettre");
+    nettoyerCellule("Nom");
+    nettoyerCellule("Prenom");
+    nettoyerCellule("Animaux");
+    nettoyerCellule("Métiers");
+    nettoyerCellule("Pays");
+    nettoyerCellule("Fruits");
 
 }
  
  
-function nettoyerCase(mots) {
+function nettoyerCellule(mots) {
 
-    let celule = document.getElementById(mots).value = " ";
-    console.log(Case); 
+    let cellule = document.getElementById(mots).value = " ";
+    console.log(cellule);  
+    // celule.innerText =" ";
+    console.log(cellule); 
+
 
 
 }
+
+ 
+// DEBUT DE MA FONCTION GENERER
+ 
+ 
+function genererLETTRE() {
+    let min = 1;
+    let max = 26;
+    let num_lettre = Math.round(Math.random() * (max - min) + min);
+    let lettre = String.fromCharCode(64 + chiffre);
+    console.log(lettre);
+
+
+    let maLettre = document.getElementById("Lettre_de_jeu");
+    console.log(maLettre);
+    maLettre.innerText = lettre;
+}
+
+ 
+ // DEBUT DE MA FONCTION RENITIALISER 
+  
+
+function renitialiser() {
+    let liste_lignes = document.getElementsByClassName('rajout_ligne')
+         // console.log(rajout_ligne);
+    //let nb_elements = liste_lignes.length
+         for (let  element in liste_lignes){
+
+             
+         liste_lignes[element].innerHTML=""
+
+
+    }
+      
